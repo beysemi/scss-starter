@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @@include('../components/shared/head.html')
+</head>
+
+<body class="theme-orange">
+
+    @@include('../components/shared/personal-care/header.html',{
+        'modifierClass': 'desktop-header--bg-linear',
+    })
+
+    <main>
+        @@include('../components/partials/homepage/hero.html')
+        @@include('../components/partials/homepage/information.html')
+        @@include('../components/partials/homepage/products.html')
+        @@include('../components/partials/homepage/features.html')
+        @@include('../components/partials/homepage/comments.html')
+        @@include('../components/partials/homepage/videos.html')
+        @@include('../components/partials/homepage/blog-posts.html')
+    </main>
+
+
+    @@include('../components/shared/footer.html')
+    
+    @@include('../components/shared/scripts.html')
+
+    
+
+</body>
+
+</html>

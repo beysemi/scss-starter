@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evony</title>
+
+    <link type="text/css" rel="stylesheet" href="./dist/css/app.css">
+    <!-- <link rel="shortcut icon" href="/dist/media/favicon/favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/dist/media/favicon//apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/dist/media/favicon//apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/dist/media/favicon//apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/dist/media/favicon//apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/dist/media/favicon//apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/dist/media/favicon//apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/dist/media/favicon//apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/dist/media/favicon//apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/dist/media/favicon//apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/dist/media/favicon//android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/dist/media/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/dist/media/favicon//favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/dist/media/favicon//favicon-16x16.png"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/dist/media/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/dist/media/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/dist/media/favicon/favicon-16x16.png">
+<link rel="manifest" href="/dist/media/favicon/site.webmanifest">
+<link rel="mask-icon" href="/dist/media/favicon/safari-pinned-tab.svg" color="#7a196b">
+<link rel="shortcut icon" href="/dist/media/favicon/favicon.ico"> -->
+    <!-- <meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/dist/media/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"> -->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="mobile-header d-xl-none">
+            <nav class="mobile-header__navbar">
+                <div class="mobile-header__main js-mobile-header-main">
+                    <a class="mobile-header__logo" href="index.html">
+                        <img src="/dist/media/img/layout/header/evony-logo-mobile.png" alt="">
+                    </a>
+                    <button class="mobile-header__toggler js-mobile-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mobile-header__collapse js-mobile-collapse">
+                    <ul class="mobile-header__nav ">
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="about-us.html"><span>Hakkımızda</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link mobile-header__nav-link--dropdown" href="javascript:void(0);" href="#"><span>Ürünler</span></a>
+                            <div class="mobile-header__dropdown-menu dropdown-menu">
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Yetişkin Hasta Bezi</span>
+                                </a>
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Emici Külot</span>
+                                </a>
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Yatak Koruyucu Örtü</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="commercials.html"><span>Sıkça Sorulan Sorular</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="commercials.html"><span>Evony Blog</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="blog.html"><span>Online Satış</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="contact-us.html"><span>İletişim</span></a>
+                        </li>
+
+                    </ul>
+                    <div class="mobile-header__product-group">
+                        <div class="dropdown dropdown--mobile">
+                            <ul id="languageDropdownMobile" class="js-dropdown dropdown-list">
+                                <li><a href="#">Kişisel Bakım</a></li>
+                            </ul>
+                            <a class="js-dropdown-toggle dropdown-toggle" data-target="#languageDropdownMobile" href="#">
+                                <span>Yetişkin Bakım </span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 3.75L6 8.25L1.5 3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="desktop-header desktop-header--relative d-none d-xl-flex  desktop-header--bg-linear">
+            <nav class="desktop-header__navbar">
+                <div class="desktop-header__brand">
+                    <a href="index.html">
+                        <img class="" src="/dist/media/img/layout/header/evony-logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="desktop-header__nav">
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link " href="about-us.html"><span>Hakkımızda</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="#">
+                            <span>Ürünler</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5L8 11L2 5" stroke="#0A0A0A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="desktop-header__dropdown-menu">
+                            <div class="desktop-header__dropdown-container container-fluid p-0">
+                                <div class="row no-gutters align-items-lg-stretch">
+                                    <div class="col-sm-12 col-md-12 col-lg-6 0">
+                                        <div class="desktop-header__dropdown-list-wrapper">
+                                            <h2 class="desktop-header__dropdown-title">
+                                                Yetişkin Bakım Ürünleri
+                                            </h2>
+                                            <div class="desktop-header__dropdown-list">
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Yetişkin Hasta Bezi</span>
+                                                </a>
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Emici Külot</span>
+                                                </a>
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Yatak Koruyucu Örtü</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="desktop-header__dropdown-whichproduct">
+                                            <div class="desktop-header__dropdown-whichproduct__content">
+                                                <svg width="91" height="58" viewBox="0 0 91 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M87.5 36.0002C101.5 64.0002 63 62.5002 41 45.0002C18.0637 45.0002 0 40.4365 0 17.5002C0 1.79038 16.8888 1.26752 31.3869 1.21221C42.4575 1.16998 54.3478 -1.79295 64.282 3.09286C74.1875 7.96453 78.8466 18.6935 87.5 36.0002Z" fill="#4E6452" fill-opacity="0.04" />
+                                                    <path d="M52.264 24.8421V17.421C52.264 15.4529 51.4821 13.5653 50.0904 12.1736C48.6987 10.7819 46.8111 10 44.8429 10C42.8747 10 40.9872 10.7819 39.5955 12.1736C38.2037 13.5653 37.4219 15.4529 37.4219 17.421V24.8421" stroke="#00783F" stroke-width="2.41991" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M57.8289 45.2501H31.8553C31.3632 45.2501 30.8913 45.0546 30.5434 44.7067C30.1955 44.3588 30 43.8869 30 43.3948V21.1317C30 20.6396 30.1955 20.1678 30.5434 19.8198C30.8913 19.4719 31.3632 19.2764 31.8553 19.2764H57.8289C58.321 19.2764 58.7929 19.4719 59.1408 19.8198C59.4887 20.1678 59.6842 20.6396 59.6842 21.1317V43.3948C59.6842 43.8869 59.4887 44.3588 59.1408 44.7067C58.7929 45.0546 58.321 45.2501 57.8289 45.2501Z" stroke="#00783F" stroke-width="2.41991" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <div>
+                                                    <h4>Hangi Ürünü Seçmeliyim?</h4>
+                                                    <a href="#">Size en uygun evony ürününü kefşetmek için tıklayın.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <div class="desktop-header__dropdown-image-area">
+                                            <img src="/dist/media/img/layout/header/products-views/01.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="faq.html"><span>Sıkça Sorulan Sorular</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="blog.html"><span>Evony Blog</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="buy.html"><span>Online Satış</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="contact-us.html"><span>İletişim</span></a>
+                    </li>
+
+                </ul>
+                <div class="desktop-header__actions">
+                    <div class="desktop-header__product-group-dropdown dropdown">
+                        <a class="js-dropdown-toggle dropdown-toggle" data-target="#languageDropdown" href="#">
+                            <span>Yetişkin Bakım </span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 3.75L6 8.25L1.5 3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul id="languageDropdown" class="js-dropdown dropdown-list">
+                            <li><a href="#">Kişisel Bakım</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="desktop-header__language-select">
+                        EN
+                    </a>
+                </div>
+            </nav>
+            <div class="desktop-header__search">
+                <div>
+                    <i class="search-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 17C14.3137 17 17 14.3137 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11C5 14.3137 7.68629 17 11 17Z" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.0001 19L15.2421 15.242" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <input class="search-input" type="text" placeholder="Ara..">
+                    <a class="search-close js-search-close-btn" href="javascript:;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17.6066L17.6066 7" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.8032 17.6066L7.19662 7" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="hero-slider">
+                            <div class="hero-slider__item">
+                                <figure class="hero-slider__figure">
+                                    <picture>
+                                        <source media="(max-width: 767.99px)" srcset="/dist/media/img/contact-us/banner/01-mobile.png">
+                                        <source media="(min-width: 768.99px" srcset="/dist/media/img/contact-us/banner/01.png">
+                                        <img class="hero-slider__img" src="/dist/media/img/contact-us/banner/01.png">
+                                    </picture>
+                                </figure>
+                                <div class="hero-slider__body">
+                                    <div class="container-fluid container-md p-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-12 col-md-12 col-lg-5 mx-lg-auto text-center">
+                                                <div class="hero-slider__content">
+                                                    <h1 class="hero-slider__title">İletişim</h1>
+                                                    <p class="hero-slider__text">Evony belbantlı yetişkin bezi vücuda uyumlu tasarımı ile tüm gece sızdırmaya karşı koruma sağlar ayrıca yanlardan nefes alan ve </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-information">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-md-12 col-lg-6 mx-auto">
+                        <h2 class="contact-information__title">
+                            <img src="/dist/media/img/homepage/products/evony-text.png" alt="">
+                            Her Zaman Yanınızda!
+                        </h2>
+                        <p class="contact-information__text">Her Evony ürünü tasarlanırken rahatınız ve konforunuzu önemseyerek hazırlanıyor.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="row no-gutters align-items-stretch">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="contact-information__item">
+                                    <div class="contact-information__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5001C102 64.5001 63.5 63.0001 41.5 45.5001C18.5637 45.5001 0.5 40.9364 0.5 18.0001C0.5 2.29026 17.3888 1.7674 31.8869 1.71209C42.9575 1.66986 54.8478 -1.29307 64.782 3.59274C74.6875 8.46441 79.3466 19.1934 88 36.5001Z" fill="#FF671D" fill-opacity="0.04" />
+                                            <path d="M59.8964 40.8604L57.3875 38.3515C56.7858 37.75 55.9699 37.4121 55.1192 37.4121C54.2684 37.4121 53.4525 37.75 52.8509 38.3515L50.8788 40.3235C50.6656 40.5418 50.3916 40.6908 50.0925 40.7511C49.7934 40.8114 49.483 40.7801 49.2019 40.6615C46.3444 39.4102 43.521 37.513 41.0036 34.9956C38.6322 32.6462 36.7163 29.8782 35.3526 26.8314C35.2291 26.541 35.196 26.2201 35.2579 25.9106C35.3197 25.6011 35.4735 25.3174 35.6991 25.0968L37.4658 23.3301C38.901 21.8949 38.901 19.8651 37.6476 18.6117L35.1387 16.1028C34.3365 15.3008 33.2487 14.8503 32.1143 14.8503C30.98 14.8503 29.8922 15.3008 29.09 16.1028L27.6954 17.4952C26.1105 19.0801 25.4496 21.3666 25.8773 23.6338C26.934 29.2227 30.1808 35.3421 35.4189 40.5802C40.6571 45.8183 46.7764 49.0652 52.3653 50.1218C54.6326 50.5496 56.919 49.8886 58.504 48.3037L59.8964 46.9113C60.2938 46.5141 60.609 46.0424 60.8241 45.5233C61.0392 45.0042 61.1499 44.4478 61.1499 43.8859C61.1499 43.3239 61.0392 42.7675 60.8241 42.2484C60.609 41.7293 60.2938 41.2577 59.8964 40.8604V40.8604Z" stroke="#FF7532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M47.1387 20.2864C48.2698 20.2678 49.3932 20.4769 50.4419 20.9013C51.4906 21.3257 52.4432 21.9567 53.2431 22.7568" stroke="#FF7532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M59.2918 16.7079C57.6976 15.1096 55.8032 13.8419 53.7176 12.9779C51.632 12.1138 49.3962 11.6704 47.1387 11.673" stroke="#FF7532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M55.7126 28.8611C55.7312 27.7299 55.5221 26.6066 55.0977 25.5579C54.6733 24.5092 54.0423 23.5566 53.2422 22.7567" stroke="#FF7532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M59.291 16.7079C60.8894 18.3022 62.157 20.1965 63.0211 22.2822C63.8851 24.3678 64.3286 26.6036 64.326 28.8611" stroke="#FF7532" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="contact-information__item-title"><a href="tel:08502009444">0850 200 94 44</a></h4>
+                                    <p class="contact-information__item-text"> 7/24 çağrı merkezimizden bizlere ulaşabilir ve sorularınıza yanıt alabilirsiniz. </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="contact-information__item">
+                                    <div class="contact-information__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5001C102 64.5001 63.5 63.0001 41.5 45.5001C18.5637 45.5001 0.5 40.9364 0.5 18.0001C0.5 2.29026 17.3888 1.7674 31.8869 1.71209C42.9575 1.66986 54.8478 -1.29307 64.782 3.59274C74.6875 8.46441 79.3466 19.1934 88 36.5001Z" fill="#59A1A2" fill-opacity="0.04" />
+                                            <path d="M56.6667 13.5H33.3333C28.1787 13.5 24 17.6787 24 22.8333V39.1667C24 44.3213 28.1787 48.5 33.3333 48.5H56.6667C61.8213 48.5 66 44.3213 66 39.1667V22.8333C66 17.6787 61.8213 13.5 56.6667 13.5Z" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M33.334 23.9626L43.1457 28.2396C43.7318 28.495 44.3643 28.6272 45.0037 28.628C45.6431 28.6288 46.2758 28.4982 46.8627 28.2443L56.6673 24.0046" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="contact-information__item-title"><a href="mailto:hello@evony.com">hello@evony.com</a></h4>
+                                    <p class="contact-information__item-text">İstek ve Şikayetleriniz için bizlere mail adresimizden ulaşabilirsiniz.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="contact-information__item">
+                                    <div class="contact-information__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5001C102 64.5001 63.5 63.0001 41.5 45.5001C18.5637 45.5001 0.5 40.9364 0.5 18.0001C0.5 2.29026 17.3888 1.7674 31.8869 1.71209C42.9575 1.66986 54.8478 -1.29307 64.782 3.59274C74.6875 8.46441 79.3466 19.1934 88 36.5001Z" fill="#00783F" fill-opacity="0.04" />
+                                            <path d="M59.7006 26.851C59.7006 18.8343 53.0155 12.3333 44.7673 12.3333C36.5191 12.3333 29.834 18.8343 29.834 26.851C29.834 37.7399 44.7673 49.6666 44.7673 49.6666C44.7673 49.6666 59.7006 37.7399 59.7006 26.851Z" stroke="#00783F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M48.2855 23.7474C48.7609 24.2065 49.1402 24.7558 49.401 25.3631C49.6619 25.9704 49.7992 26.6236 49.805 27.2846C49.8107 27.9455 49.6848 28.601 49.4345 29.2127C49.1842 29.8245 48.8146 30.3803 48.3472 30.8476C47.8798 31.315 47.324 31.6846 46.7123 31.9349C46.1005 32.1852 45.4451 32.3111 44.7841 32.3054C44.1232 32.2997 43.47 32.1623 42.8627 31.9015C42.2554 31.6406 41.7061 31.2614 41.2469 30.7859C40.3402 29.8471 39.8385 28.5897 39.8498 27.2846C39.8611 25.9794 40.3846 24.7309 41.3076 23.808C42.2305 22.8851 43.479 22.3616 44.7841 22.3502C46.0893 22.3389 47.3467 22.8406 48.2855 23.7474" stroke="#00783F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="contact-information__item-title"><a href="https://goo.gl/maps/WrWY4EhCyLZo31Yq5" target="_blank">Altunizade, Mahir İz Cd. No:25, 34662 Üsküdar/İstanbul</a></h4>
+                                    <p class="contact-information__item-text">İstek ve Şikayetleriniz için bizlere mail adresimizden ulaşabilirsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2 class="contact-area__title">İletişim Formu</h2>
+                    </div>
+                    <div class="col-sm-12 col-md 12 col-lg-12">
+                        <div class="row no-gutters align-items-stretch">
+                            <div class="col-sm-12 col-md-12 col-lg-7">
+                                <div class="contact-area__form">
+                                    <form id="contactForm" action="" method="post">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="contact-area__form-item">
+                                                    <input id="name" name="name" pattern="[a-zA-ZğüşöçıIİĞÜŞÖÇ ]+" type="text" placeholder="Ad">
+                                                    <label for="name">Ad </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="contact-area__form-item">
+                                                    <input id="surname" name="surname" pattern="[a-zA-ZğüşöçıIİĞÜŞÖÇ ]+" type="text" placeholder="Soyad">
+                                                    <label for="name">Soyad </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="contact-area__form-item">
+                                                    <input id="email" name="email" data-inputmask="'alias': 'email'" type="text" placeholder="Mail Adresi" inputmode="email">
+                                                    <label for="email">Mail Adresi</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="contact-area__form-item">
+                                                    <input id="phone" name="phone" type="text" data-inputmask="'mask': '+99 (999) 999 99 99', 'placeholder':'+90 (___) ___ __ __'" placeholder="+90 (___) ___ __ __" inputmode="text">
+                                                    <label for="phone">Telefon</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <div class="contact-area__form-item">
+                                                    <textarea id="message" name="message" data-inputmask="'placeholder':''" cols="30" rows="5" inputmode="text" placeholder="Mesaj"></textarea>
+                                                    <label for="message">Mesaj</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                                <div class="contact-area__form-item">
+                                                    <label class="checkbox-container">
+                                                        <span>I have read, understood and approved the KVKK Clarification Text.</span>
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-5 mx-lg-auto">
+                                                <div class="contact-area__form-item">
+                                                    <button class="btn btn--primary" type="submit">Gönder</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-5 d-none d-lg-block">
+                                <img class="contact-area__img" src="/dist/media/img/contact-us/content/01.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container-xlg container-fluid p-0">
+                <div class="row no-gutters justify-content-lg-between">
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-none d-lg-block">
+                        <img class="footer__main-logo" src="/dist/media/img/layout/footer/evony-logo.png" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-2">
+                        <div class="footer__menu">
+                            <h4 class="footer__menu-title">Sayfalar</h4>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Hakkımızda</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Ürünler</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Sıkça Sorulan Sorular</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Online Satış</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-2">
+                        <div class="footer__menu">
+                            <h4 class="footer__menu-title">Bize Ulaşın</h4>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">İletişim</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Hayat Kimya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="footer__menu footer__menu--social">
+                            <h4 class="footer__menu-title">Sosyal Medya</h4>
+                            <p class="footer__menu-text">Sosyal medya hesaplarımızı takip ederek yeniliklerden ve kampanyalarımızdan haberdar olabilirsiniz.</p>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8819 17.367C25.0766 17.3129 25.4583 17.2998 28.5 17.2998C31.5418 17.2998 31.9235 17.3129 33.1182 17.367C34.9382 17.4501 36.537 17.8962 37.8203 19.1795C39.1036 20.4629 39.5498 22.0617 39.6328 23.8817C39.687 25.0763 39.7 25.4581 39.7 28.4998C39.7 31.5415 39.687 31.9233 39.6328 33.1179C39.5498 34.9379 39.1036 36.5367 37.8203 37.8201C36.537 39.1034 34.9382 39.5495 33.1182 39.6326C31.9235 39.6867 31.5418 39.6998 28.5 39.6998C25.4583 39.6998 25.0766 39.6867 23.8819 39.6326C22.0619 39.5495 20.4631 39.1034 19.1798 37.8201C17.8964 36.5367 17.4503 34.9379 17.3672 33.1179C17.3131 31.9233 17.3 31.5415 17.3 28.4998C17.3 25.4581 17.3131 25.0763 17.3672 23.8817C17.4503 22.0617 17.8964 20.4629 19.1798 19.1795C20.4631 17.8962 22.0619 17.4501 23.8819 17.367ZM33.0259 19.3831C31.8452 19.329 31.4906 19.3178 28.5001 19.3178C25.5097 19.3178 25.1551 19.329 23.9744 19.3831C22.6995 19.441 21.5169 19.6967 20.6069 20.6067C19.6969 21.5167 19.4412 22.6992 19.3833 23.9742C19.3292 25.1548 19.318 25.5095 19.318 28.4999C19.318 31.4903 19.3292 31.845 19.3833 33.0256C19.4412 34.3006 19.6969 35.4831 20.6069 36.3931C21.5169 37.3031 22.6995 37.5588 23.9744 37.6167C25.1551 37.6708 25.5097 37.682 28.5001 37.682C31.4906 37.682 31.8452 37.6708 33.0259 37.6167C34.3008 37.5588 35.4834 37.3031 36.3934 36.3931C37.3034 35.4831 37.5591 34.3006 37.617 33.0256C37.6711 31.845 37.6823 31.4903 37.6823 28.4999C37.6823 25.5095 37.6711 25.1548 37.617 23.9742C37.5591 22.6992 37.3034 21.5167 36.3934 20.6067C35.4834 19.6967 34.3008 19.441 33.0259 19.3831Z" fill="#00783F" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4695 28.5C22.4695 25.1695 25.1697 22.4692 28.5002 22.4692C31.8308 22.4692 34.531 25.1695 34.531 28.5C34.531 31.8305 31.8308 34.5308 28.5002 34.5308C25.1697 34.5308 22.4695 31.8305 22.4695 28.5ZM24.5855 28.5006C24.5855 30.6626 26.3383 32.4154 28.5003 32.4154C30.6622 32.4154 32.4151 30.6626 32.4151 28.5006C32.4151 26.3387 30.6622 24.5858 28.5003 24.5858C26.3383 24.5858 24.5855 26.3387 24.5855 28.5006Z" fill="#00783F" />
+                                        <path d="M34.5312 24.1927C35.4828 24.1927 36.2543 23.4213 36.2543 22.4697C36.2543 21.518 35.4828 20.7466 34.5312 20.7466C33.5796 20.7466 32.8081 21.518 32.8081 22.4697C32.8081 23.4213 33.5796 24.1927 34.5312 24.1927Z" fill="#00783F" />
+                                        <rect x="1" y="1" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                    </svg>
+                                    <div class="footer__menu-link-wrapper">
+                                        <a href="#" class="footer__menu-link">evonyhijyenailesi</a>
+                                        <a href="#" class="footer__menu-link">evonyyetiskinbakim</a>
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.4536 17.5465C41.0669 17.9198 42.1869 19.5998 42.5602 22.0265C42.9336 24.4531 42.9336 27.9998 42.9336 27.9998C42.9336 27.9998 42.9336 31.5465 42.5602 33.9731C42.1869 36.3998 41.0669 37.8931 38.4536 38.4531C34.3469 39.1998 28.0002 39.1998 28.0002 39.1998C28.0002 39.1998 21.6536 39.1998 17.5469 38.4531C14.9336 38.0798 13.8136 36.3998 13.4402 33.9731C13.0669 31.5465 13.0669 27.9998 13.0669 27.9998C13.0669 27.9998 13.0669 24.4531 13.4402 22.0265C13.6269 19.5998 14.9336 17.9198 17.5469 17.5465C21.6536 16.7998 28.0002 16.7998 28.0002 16.7998C28.0002 16.7998 34.3469 16.7998 38.4536 17.5465ZM33.6001 27.9998L24.2668 22.3998V33.5998L33.6001 27.9998Z" fill="#00783F" />
+                                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                    </svg>
+                                    <a href="#" class="footer__menu-link">evony</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1313_2002)">
+                                            <rect x="0.5" y="1" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                            <path d="M25.322 39.6998L25.2903 29.518H21.2803V25.4453H25.2903V22.8998C25.2903 19.1209 27.5944 17.2998 30.9136 17.2998C32.5035 17.2998 33.87 17.42 34.2682 17.4738V21.4229L31.9662 21.424C30.161 21.424 29.8115 22.2951 29.8115 23.5735V25.4453H35.0649L33.0599 29.518H29.8115V39.6998H25.322Z" fill="#00783F" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1313_2002">
+                                                <rect width="56" height="56" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div class="footer__menu-link-wrapper">
+                                        <a href="#" class="footer__menu-link">evonyhijyenailesi</a>
+                                        <a href="#" class="footer__menu-link">evonyyetiskinbakim</a>
+                                    </div>
+                                </li>
+
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1313_2020)">
+                                            <path d="M38.22 16.7998H17.78C17.22 16.7998 16.8 17.2198 16.8 17.7798V38.3598C16.8 38.7798 17.22 39.1998 17.78 39.1998H38.36C38.92 39.1998 39.34 38.7798 39.34 38.2198V17.7798C39.2 17.2198 38.78 16.7998 38.22 16.7998ZM23.38 35.8398H20.16V25.1998H23.52V35.8398H23.38ZM21.84 23.7998C20.72 23.7998 19.88 22.8198 19.88 21.8398C19.88 20.7198 20.72 19.8798 21.84 19.8798C22.96 19.8798 23.8 20.7198 23.8 21.8398C23.66 22.8198 22.82 23.7998 21.84 23.7998ZM35.84 35.8398H32.48V30.6598C32.48 29.3998 32.48 27.8598 30.8 27.8598C29.12 27.8598 28.84 29.2598 28.84 30.6598V35.9798H25.48V25.1998H28.7V26.5998C29.12 25.7598 30.24 24.9198 31.78 24.9198C35.14 24.9198 35.7 27.1598 35.7 29.9598V35.8398H35.84Z" fill="#00783F" />
+                                        </g>
+                                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                        <defs>
+                                            <clipPath id="clip0_1313_2020">
+                                                <rect width="22.4" height="22.4" fill="white" transform="translate(16.8 16.7998)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <a href="#" class="footer__menu-link">hayatkimya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright ">
+            <div class="container-xl container-fluid footer__copyright-bg-line">
+                <div class="row align-items-lg-center justify-content-lg-between no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-1 order-lg-1">
+                        <p class="footer__copyright-text">Evony 2020. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-3 order-lg-2">
+                        <a class="footer__copyright-logo" href="#">
+                            <img src="/dist/media/img/layout/footer/hayat-kimya-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-lg-3">
+                        <ul class="footer__copyright-menu">
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Kullanım Şartları</a>
+                            </li>
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Gizlilik Politikası</a>
+                            </li>
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Çerezler</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/js/app.js"></script>
+    <script src="/dist/js/plugins/lazysizes/lazysizes.min.js"></script>
+    <!-- <script src="/dist/js/plugins/jquery.modal.min.js"></script> -->
+    <script src="/dist/js/plugins/js.cookie.min.js"></script>
+    <script src="/dist/js/plugins/vanilla-sharing.js"></script>
+    <script src="/dist/js/plugins/popup.js"></script>
+
+
+    <script src="/dist/js/pages/contact-us.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+// ui color palette
+
+
+$ui-colors: (
+  
+);
+
+@function getColor($colorName) {
+  @each $map-key, $map-value in $ui-colors {
+    @if $map-key==$colorName {
+      @return $map-value;
+    }
+  }
+
+  @return $colorName;
+}

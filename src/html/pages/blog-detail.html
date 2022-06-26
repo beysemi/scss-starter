@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @@include('../components/shared/head.html')
+</head>
+
+<body>
+
+    @@include('../components/shared/header.html',{
+        'modifierClass': 'desktop-header--bg-linear',
+    })
+
+    <main>
+        @@include('../components/partials/blog-detail/hero.html')
+        @@include('../components/partials/blog-detail/content.html')
+        @@include('../components/partials/blog-detail/other-posts.html')
+        
+    </main>
+
+
+    @@include('../components/shared/footer.html')
+    
+    @@include('../components/shared/scripts.html')
+
+    
+
+</body>
+
+</html>

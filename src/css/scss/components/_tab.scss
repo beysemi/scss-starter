@@ -1,0 +1,31 @@
+// .tab-container {
+//   .tab-item {
+//   }
+// }
+// .tab-nav {
+//   .tab-list {
+//     @include flex-y-center(row, false);
+//     white-space: nowrap;
+//     justify-content: flex-start;
+//     list-style-type: none;
+//     // padding: 0;
+//     overflow-x: scroll;
+//     @include media-breakpoint-up(lg) {
+//       justify-content: center;
+//       overflow-x: unset;
+//     }
+//   }
+//   .tab-item {
+//     margin-bottom: rem(5px);
+//     & + .tab-item {
+//       margin-left: rem(40);
+//     }
+//     &.passive {
+//       a {
+//       }
+//     }
+//   }
+//   .tab-link {
+//     transition: all 0.2s ease;
+//   }
+// }

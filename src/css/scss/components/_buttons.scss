@@ -1,0 +1,16 @@
+$btn-radius: 53px;
+
+.btn {
+	font-family: $main-font-family;
+	@include media-breakpoint-up(xs) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+
+	.icon,
+	svg {
+		margin-left: rem(8);
+	}
+}

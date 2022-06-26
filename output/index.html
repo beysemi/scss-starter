@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evony</title>
+
+    <link type="text/css" rel="stylesheet" href="./dist/css/app.css">
+    <!-- <link rel="shortcut icon" href="/dist/media/favicon/favicon.ico"> -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/dist/media/favicon//apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/dist/media/favicon//apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/dist/media/favicon//apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/dist/media/favicon//apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/dist/media/favicon//apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/dist/media/favicon//apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/dist/media/favicon//apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/dist/media/favicon//apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/dist/media/favicon//apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/dist/media/favicon//android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/dist/media/favicon//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/dist/media/favicon//favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/dist/media/favicon//favicon-16x16.png"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/dist/media/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/dist/media/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/dist/media/favicon/favicon-16x16.png">
+<link rel="manifest" href="/dist/media/favicon/site.webmanifest">
+<link rel="mask-icon" href="/dist/media/favicon/safari-pinned-tab.svg" color="#7a196b">
+<link rel="shortcut icon" href="/dist/media/favicon/favicon.ico"> -->
+    <!-- <meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/dist/media/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"> -->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="mobile-header d-xl-none">
+            <nav class="mobile-header__navbar">
+                <div class="mobile-header__main js-mobile-header-main">
+                    <a class="mobile-header__logo" href="index.html">
+                        <img src="/dist/media/img/layout/header/evony-logo-mobile.png" alt="">
+                    </a>
+                    <button class="mobile-header__toggler js-mobile-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mobile-header__collapse js-mobile-collapse">
+                    <ul class="mobile-header__nav ">
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="about-us.html"><span>Hakkımızda</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link mobile-header__nav-link--dropdown" href="javascript:void(0);" href="#"><span>Ürünler</span></a>
+                            <div class="mobile-header__dropdown-menu dropdown-menu">
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Yetişkin Hasta Bezi</span>
+                                </a>
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Emici Külot</span>
+                                </a>
+                                <a class="mobile-header__dropdown-item" href="#">
+                                    <span>Yatak Koruyucu Örtü</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="commercials.html"><span>Sıkça Sorulan Sorular</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="commercials.html"><span>Evony Blog</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="blog.html"><span>Online Satış</span></a>
+                        </li>
+                        <li class="mobile-header__nav-item">
+                            <a class="mobile-header__nav-link" href="contact-us.html"><span>İletişim</span></a>
+                        </li>
+
+                    </ul>
+                    <div class="mobile-header__product-group">
+                        <div class="dropdown dropdown--mobile">
+                            <ul id="languageDropdownMobile" class="js-dropdown dropdown-list">
+                                <li><a href="#">Kişisel Bakım</a></li>
+                            </ul>
+                            <a class="js-dropdown-toggle dropdown-toggle" data-target="#languageDropdownMobile" href="#">
+                                <span>Yetişkin Bakım </span>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5 3.75L6 8.25L1.5 3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="desktop-header desktop-header--relative d-none d-xl-flex  desktop-header--bg-linear">
+            <nav class="desktop-header__navbar">
+                <div class="desktop-header__brand">
+                    <a href="index.html">
+                        <img class="" src="/dist/media/img/layout/header/evony-logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="desktop-header__nav">
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link " href="about-us.html"><span>Hakkımızda</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="#">
+                            <span>Ürünler</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5L8 11L2 5" stroke="#0A0A0A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <div class="desktop-header__dropdown-menu">
+                            <div class="desktop-header__dropdown-container container-fluid p-0">
+                                <div class="row no-gutters align-items-lg-stretch">
+                                    <div class="col-sm-12 col-md-12 col-lg-6 0">
+                                        <div class="desktop-header__dropdown-list-wrapper">
+                                            <h2 class="desktop-header__dropdown-title">
+                                                Yetişkin Bakım Ürünleri
+                                            </h2>
+                                            <div class="desktop-header__dropdown-list">
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Yetişkin Hasta Bezi</span>
+                                                </a>
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Emici Külot</span>
+                                                </a>
+                                                <a class="desktop-header__dropdown-item" href="#">
+                                                    <span>Yatak Koruyucu Örtü</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="desktop-header__dropdown-whichproduct">
+                                            <div class="desktop-header__dropdown-whichproduct__content">
+                                                <svg width="91" height="58" viewBox="0 0 91 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M87.5 36.0002C101.5 64.0002 63 62.5002 41 45.0002C18.0637 45.0002 0 40.4365 0 17.5002C0 1.79038 16.8888 1.26752 31.3869 1.21221C42.4575 1.16998 54.3478 -1.79295 64.282 3.09286C74.1875 7.96453 78.8466 18.6935 87.5 36.0002Z" fill="#4E6452" fill-opacity="0.04" />
+                                                    <path d="M52.264 24.8421V17.421C52.264 15.4529 51.4821 13.5653 50.0904 12.1736C48.6987 10.7819 46.8111 10 44.8429 10C42.8747 10 40.9872 10.7819 39.5955 12.1736C38.2037 13.5653 37.4219 15.4529 37.4219 17.421V24.8421" stroke="#00783F" stroke-width="2.41991" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M57.8289 45.2501H31.8553C31.3632 45.2501 30.8913 45.0546 30.5434 44.7067C30.1955 44.3588 30 43.8869 30 43.3948V21.1317C30 20.6396 30.1955 20.1678 30.5434 19.8198C30.8913 19.4719 31.3632 19.2764 31.8553 19.2764H57.8289C58.321 19.2764 58.7929 19.4719 59.1408 19.8198C59.4887 20.1678 59.6842 20.6396 59.6842 21.1317V43.3948C59.6842 43.8869 59.4887 44.3588 59.1408 44.7067C58.7929 45.0546 58.321 45.2501 57.8289 45.2501Z" stroke="#00783F" stroke-width="2.41991" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <div>
+                                                    <h4>Hangi Ürünü Seçmeliyim?</h4>
+                                                    <a href="#">Size en uygun evony ürününü kefşetmek için tıklayın.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <div class="desktop-header__dropdown-image-area">
+                                            <img src="/dist/media/img/layout/header/products-views/01.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="faq.html"><span>Sıkça Sorulan Sorular</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="blog.html"><span>Evony Blog</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="buy.html"><span>Online Satış</span></a>
+                    </li>
+                    <li class="desktop-header__nav-item">
+                        <a class="desktop-header__nav-link" href="contact-us.html"><span>İletişim</span></a>
+                    </li>
+
+                </ul>
+                <div class="desktop-header__actions">
+                    <div class="desktop-header__product-group-dropdown dropdown">
+                        <a class="js-dropdown-toggle dropdown-toggle" data-target="#languageDropdown" href="#">
+                            <span>Yetişkin Bakım </span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5 3.75L6 8.25L1.5 3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <ul id="languageDropdown" class="js-dropdown dropdown-list">
+                            <li><a href="#">Kişisel Bakım</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="desktop-header__language-select">
+                        EN
+                    </a>
+                </div>
+            </nav>
+            <div class="desktop-header__search">
+                <div>
+                    <i class="search-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 17C14.3137 17 17 14.3137 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11C5 14.3137 7.68629 17 11 17Z" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.0001 19L15.2421 15.242" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <input class="search-input" type="text" placeholder="Ara..">
+                    <a class="search-close js-search-close-btn" href="javascript:;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 17.6066L17.6066 7" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M17.8032 17.6066L7.19662 7" stroke="#0A0A0A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="homepage-hero">
+            <div class="container-fluid p-0 ">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="hero-slider">
+                            <div class="hero-slider__item">
+                                <figure class="hero-slider__figure">
+                                    <picture>
+                                        <source media="(max-width: 767.99px)" srcset="/dist/media/img/homepage/banner/adult-care/01-mobile.png">
+                                        <source media="(min-width: 768.99px" srcset="/dist/media/img/homepage/banner/adult-care/01.png">
+                                        <img class="hero-slider__img" src="/dist/media/img/homepage/banner/adult-care/01.png">
+                                    </picture>
+                                </figure>
+                                <div class="hero-slider__body">
+                                    <div class="container-fluid container-md p-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-12 col-md-5 col-lg-5">
+                                                <div class="hero-slider__content">
+                                                    <h1 class="hero-slider__content-title">Tüketicilerin <br> İlk Tercihi <img src="/dist/media/img/homepage/evony-text.png" alt=""></h1>
+                                                    <p class="hero-slider__content-text">Evony Türkiye ailesi olarak genel hijyen kurallarını ve maske kullanımında dikkat edilmesi gereken detayları tekrar hatırlatmak isteriz. </p>
+                                                    <a class="hero-slider__content-btn btn btn--primary" href="">
+                                                        <span>Detaylı Bilgi</span>
+                                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.5 2L11.5 8L5.5 14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-information">
+            <div class="container-md container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <nav class="homepage-information__nav tab-nav">
+                            <ul class="homepage-information__nav-list tab-list">
+                                <li class="homepage-information__nav-item tab-item">
+                                    <a href="#tab-one" class="homepage-information__nav-link tab-link" id="nav-one-tab">Zihinsel Refah</a>
+                                </li>
+                                <li class="homepage-information__nav-item tab-item">
+                                    <a href="#tab-two" class="homepage-information__nav-link tab-link" id="nav-two-tab">İdrar Kaçırma</a>
+                                </li>
+                                <li class="homepage-information__nav-item tab-item">
+                                    <a href="#tab-tree" class="homepage-information__nav-link tab-link" id="nav-tree-tab">Hasta Yakını</a>
+                                </li>
+                                <li class="homepage-information__nav-item tab-item">
+                                    <a href="#tab-four" class="homepage-information__nav-link tab-link" id="nav-four-tab">Bası Yarası</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="homepage-information__container tab-container">
+                            <div class="homepage-information__content tab-content" id="tab-one">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1">
+                                        <img class="homepage-information__content-img" src="/dist/media/img/homepage/information/adult-care/01.png" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-5 5 offset-lg-1 order-1 order-lg-2">
+                                        <h2 class="homepage-information__content-title">Zihinsel Refah</h2>
+                                        <p class="homepage-information__content-text">
+                                            Genç bir benlik duygusuna sahip olmak, fiziksel ve zihinsel refahı sağlam tutmaya yardımcı olan olumlu davranışlarda bulunabilir: Kendini daha genç hisseden bireyler sağlığı koruyucu davranışlar uygulayabilir.. Örneğin, kendilerini pek genç hissetmeyenlere göre fiziksel olarak daha aktif olabilirler. Ek olarak, kendini daha genç olarak algılamak, insana işleri etkili bir şekilde başarma yeteneklerinde motive edici bir güç olabilir.
+                                        </p>
+                                        <a class="homepage-information__content-btn btn btn--primary-outline" href="">
+                                            <span>
+                                                Devamını Oku
+                                            </span>
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.5 2L11.5 8L5.5 14" stroke="#00783F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage-information__content tab-content" id="tab-two">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <img class="homepage-information__content-img" src="/dist/media/img/homepage/information/adult-care/01.png" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <h2 class="homepage-information__content-title">Zihinsel Refah 2</h2>
+                                        <p class="homepage-information__content-text">
+                                            Genç bir benlik duygusuna sahip olmak, fiziksel ve zihinsel refahı sağlam tutmaya yardımcı olan olumlu davranışlarda bulunabilir: Kendini daha genç hisseden bireyler sağlığı koruyucu davranışlar uygulayabilir.. Örneğin, kendilerini pek genç hissetmeyenlere göre fiziksel olarak daha aktif olabilirler. Ek olarak, kendini daha genç olarak algılamak, insana işleri etkili bir şekilde başarma yeteneklerinde motive edici bir güç olabilir.
+                                        </p>
+                                        <a class="homepage-information__content-btn btn btn--primary-bordered" href="">
+                                            <span>
+                                                Devamını Oku
+                                            </span>
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.5 2L11.5 8L5.5 14" stroke="#00783F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage-information__content tab-content" id="tab-tree">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <img class="homepage-information__content-img" src="/dist/media/img/homepage/information/adult-care/01.png" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <h2 class="homepage-information__content-title">Zihinsel Refah 3</h2>
+                                        <p class="homepage-information__content-text">
+                                            Genç bir benlik duygusuna sahip olmak, fiziksel ve zihinsel refahı sağlam tutmaya yardımcı olan olumlu davranışlarda bulunabilir: Kendini daha genç hisseden bireyler sağlığı koruyucu davranışlar uygulayabilir.. Örneğin, kendilerini pek genç hissetmeyenlere göre fiziksel olarak daha aktif olabilirler. Ek olarak, kendini daha genç olarak algılamak, insana işleri etkili bir şekilde başarma yeteneklerinde motive edici bir güç olabilir.
+                                        </p>
+                                        <a class="homepage-information__content-btn btn btn--primary-bordered" href="">
+                                            <span>
+                                                Devamını Oku
+                                            </span>
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.5 2L11.5 8L5.5 14" stroke="#00783F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="homepage-information__content tab-content" id="tab-four">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <img class="homepage-information__content-img" src="/dist/media/img/homepage/information/adult-care/01.png" alt="">
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <h2 class="homepage-information__content-title">Zihinsel Refah 4</h2>
+                                        <p class="homepage-information__content-text">
+                                            Genç bir benlik duygusuna sahip olmak, fiziksel ve zihinsel refahı sağlam tutmaya yardımcı olan olumlu davranışlarda bulunabilir: Kendini daha genç hisseden bireyler sağlığı koruyucu davranışlar uygulayabilir.. Örneğin, kendilerini pek genç hissetmeyenlere göre fiziksel olarak daha aktif olabilirler. Ek olarak, kendini daha genç olarak algılamak, insana işleri etkili bir şekilde başarma yeteneklerinde motive edici bir güç olabilir.
+                                        </p>
+                                        <a class="homepage-information__content-btn btn btn--primary-bordered" href="">
+                                            <span>
+                                                Devamını Oku
+                                            </span>
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.5 2L11.5 8L5.5 14" stroke="#00783F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-products">
+            <div class="container-fluid container-md p-0 px-lg-5">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-4 mx-lg-auto">
+                        <h2 class="homepage-products__title">Ürünlerimiz</h2>
+                        <p class="homepage-products__text">Her Evony ürünü tasarlanırken rahatınız ve konforunuzu önemseyerek hazırlanıyor.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="products-slider js-products-slider">
+                            <div class="products-slider__item">
+                                <div class="products-slider__card">
+                                    <div class="products-slider__card-header">
+                                        <img class="products-slider__card-img" src="/dist/media/img/homepage/products/slider/01.png" alt="">
+                                    </div>
+                                    <div class="products-slider__card-body">
+                                        <span class="products-slider__card-subtitle">LARGE</span>
+                                        <h4 class="products-slider__card-title">Evony Emici Külot</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-slider__item">
+                                <div class="products-slider__card">
+                                    <div class="products-slider__card-header">
+                                        <img class="products-slider__card-img" src="/dist/media/img/homepage/products/slider/01.png" alt="">
+                                    </div>
+                                    <div class="products-slider__card-body">
+                                        <span class="products-slider__card-subtitle">LARGE</span>
+                                        <h4 class="products-slider__card-title">Evony Emici Külot</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-slider__item">
+                                <div class="products-slider__card">
+                                    <div class="products-slider__card-header">
+                                        <img class="products-slider__card-img" src="/dist/media/img/homepage/products/slider/01.png" alt="">
+                                    </div>
+                                    <div class="products-slider__card-body">
+                                        <span class="products-slider__card-subtitle">LARGE</span>
+                                        <h4 class="products-slider__card-title">Evony Emici Külot</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-slider__item">
+                                <div class="products-slider__card">
+                                    <div class="products-slider__card-header">
+                                        <img class="products-slider__card-img" src="/dist/media/img/homepage/products/slider/01.png" alt="">
+                                    </div>
+                                    <div class="products-slider__card-body">
+                                        <span class="products-slider__card-subtitle">LARGE</span>
+                                        <h4 class="products-slider__card-title">Evony Emici Külot</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="#" class="homepage-products__btn btn btn--tertiary-outline">
+                            <span>Tümünü Gör</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 2L11 8L5 14" stroke="#253146" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 mx-lg-auto">
+                        <h2 class="homepage-features__title">
+                            <img src="/dist/media/img/homepage/products/evony-text.png" alt="">
+                            Her Zaman Yanınızda!
+                        </h2>
+                        <p class="homepage-features__text">Her Evony ürünü tasarlanırken rahatınız ve konforunuzu önemseyerek hazırlanıyor.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="row no-gutters align-items-stretch">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="homepage-features__item">
+                                    <div class="homepage-features__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5002C102 64.5002 63.5 63.0002 41.5 45.5002C18.5637 45.5002 0.5 40.9365 0.5 18.0002C0.5 2.29038 17.3888 1.76752 31.8869 1.71221C42.9575 1.66998 54.8478 -1.29295 64.782 3.59286C74.6875 8.46453 79.3466 19.1935 88 36.5002Z" fill="#FF671D" fill-opacity="0.04" />
+                                            <path d="M48.6725 10.3383C47.4603 10.12 46.2315 10.0068 44.9998 10C43.7445 10 42.5218 10.1307 41.3271 10.3383" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M64.8752 23.937C65.6989 26.198 66.1702 28.627 66.1702 31.1703" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M61.2119 17.567C59.6216 15.6798 57.7148 14.0841 55.5769 12.8513" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M34.4228 12.8513C32.2854 14.0847 30.3787 15.6804 28.7878 17.567" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M23.8296 31.1703C23.8296 28.6247 24.3009 26.1957 25.1246 23.937" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M34.4229 49.4893C36.5229 50.7049 38.8492 51.5659 41.3272 51.9999" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M25.1245 38.4036C25.9649 40.7242 27.2047 42.88 28.7878 44.7736" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M48.6726 51.9999C51.1037 51.5751 53.4408 50.7252 55.5769 49.4893" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M61.2119 44.7736C62.7951 42.88 64.0348 40.7242 64.8752 38.4036" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M46.8667 20.269L52.4574 27.7496C57.0564 33.9003 52.672 42.6666 45 42.6666C37.328 42.6666 32.9437 33.9003 37.5404 27.7496L43.1334 20.269C43.3501 19.9783 43.6318 19.7423 43.9558 19.5798C44.2799 19.4172 44.6375 19.3325 45 19.3325C45.3626 19.3325 45.7202 19.4172 46.0442 19.5798C46.3683 19.7423 46.6499 19.9783 46.8667 20.269V20.269Z" stroke="#59A1A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="homepage-features__item-title">Sızdırmaz Bariyerler</h4>
+                                    <p class="homepage-features__item-text"> Sızdırmalara karşı bariyer koruması sağlayarak rahat bir gün geçirmenize yardımcı olur.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="homepage-features__item">
+                                    <div class="homepage-features__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5002C102 64.5002 63.5 63.0002 41.5 45.5002C18.5637 45.5002 0.5 40.9365 0.5 18.0002C0.5 2.29038 17.3888 1.76752 31.8869 1.71221C42.9575 1.66998 54.8478 -1.29295 64.782 3.59286C74.6875 8.46453 79.3466 19.1935 88 36.5002Z" fill="#59A1A2" fill-opacity="0.04" />
+                                            <path d="M40.3335 31L43.8335 34.5L50.8335 27.5" stroke="#F29D2D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M61.4544 43.6147C61.4544 43.6147 55.9143 49.0657 51.3173 50.71C49.1593 51.4818 45.573 52 45.573 52L41.5182 50.71C41.5182 50.71 31.9961 45.7858 28.6778 40.3896C25.7005 35.5478 25.2922 26.3817 25.2922 26.3817V17.1688C25.2922 17.1688 24.7333 14.1345 25.9746 12.9761C26.6076 12.3854 28.002 12.0086 28.002 12.0086L36.7875 10.7185C36.7875 10.7185 44.6196 9.72696 49.6278 10.0735C52.4198 10.2667 53.9944 10.4478 56.7237 11.041C59.9787 11.7485 64.8334 13.6211 64.8334 13.6211" stroke="#F29D2D" stroke-width="3.97" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="homepage-features__item-title">Üst Düzey Koruma</h4>
+                                    <p class="homepage-features__item-text">Gün içinde geçirdiğiniz süre boyunca evony ürünleri üst düzey koruması ile her an yardımcınız oluyor.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="homepage-features__item">
+                                    <div class="homepage-features__item-icon">
+                                        <svg width="91" height="59" viewBox="0 0 91 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M88 36.5002C102 64.5002 63.5 63.0002 41.5 45.5002C18.5637 45.5002 0.5 40.9365 0.5 18.0002C0.5 2.29038 17.3888 1.76752 31.8869 1.71221C42.9575 1.66998 54.8478 -1.29295 64.782 3.59286C74.6875 8.46453 79.3466 19.1935 88 36.5002Z" fill="#00783F" fill-opacity="0.04" />
+                                            <path d="M28.6667 28.6668H40.4757C41.6267 28.6662 42.7597 28.3819 43.7746 27.839C44.7894 27.2961 45.6547 26.5114 46.2939 25.5542C46.933 24.5971 47.3264 23.4971 47.439 22.3517C47.5516 21.2063 47.3801 20.0508 46.9396 18.9875C46.499 17.9242 45.8032 16.986 44.9135 16.2558C44.0238 15.5256 42.9679 15.0261 41.8391 14.8014C40.7103 14.5767 39.5435 14.6339 38.4421 14.9677C37.3406 15.3016 36.3385 15.9018 35.5244 16.7154" stroke="#00783F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M24 38H44.2183C45.1784 37.9993 46.1238 38.2354 46.9708 38.6875C47.8178 39.1396 48.5401 39.7936 49.0738 40.5917C49.6075 41.3898 49.9361 42.3072 50.0303 43.2627C50.1246 44.2181 49.9817 45.182 49.6143 46.069C49.2468 46.956 48.6662 47.7387 47.924 48.3475C47.1817 48.9564 46.3006 49.3728 45.3589 49.5597C44.4172 49.7466 43.4439 49.6983 42.5253 49.419C41.6068 49.1397 40.7713 48.6381 40.093 47.9587" stroke="#00783F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M52 33.3334H60.533C61.4328 33.3342 62.3189 33.1129 63.1128 32.6892C63.9066 32.2655 64.5836 31.6525 65.0839 30.9045C65.5841 30.1565 65.892 29.2967 65.9804 28.4012C66.0687 27.5057 65.9348 26.6023 65.5904 25.7709C65.246 24.9396 64.7019 24.2061 64.0061 23.6354C63.3104 23.0647 62.4847 22.6745 61.602 22.4994C60.7194 22.3242 59.8072 22.3696 58.9463 22.6313C58.0854 22.8931 57.3024 23.3633 56.6667 24.0001" stroke="#00783F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="homepage-features__item-title">Nefes Alan Yüzey</h4>
+                                    <p class="homepage-features__item-text">Nefes alan üst yüzey sayesinde her gün içinde her zaman ferah ve rahat hissedersiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-comments">
+            <div class="container-md container-fluid p-0 px-lg-5">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h2 class="homepage-comments__title">Türkiye’nin Tercihi
+                            <br>
+                            <picture>
+                                <source media="(max-width: 991.99px)" srcset="/dist/media/img/homepage/comments/evony-text-mobile.png">
+                                <source media="(min-width: 992px)" srcset="/dist/media/img/homepage/comments/evony-text.png">
+                                <img src="/dist/media/img/homepage/comments/evony-text.png" alt="">
+                            </picture>
+                        </h2>
+                        <p class="homepage-comments__text">Evony Yetişkin Bezini kullanan her 100 kişiden</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="homepage-comments__slider">
+                            <div class="comments-slider js-comments-slider">
+                                <div class="comments-slider__item">
+                                    <div class="comments-slider__card">
+                                        <div class="comments-slider__card-head">
+                                            <img src="/dist/media/img/homepage/comments/slider/01.png" alt="">
+                                        </div>
+                                        <div class="comments-slider__card-body">
+                                            <h6 class="comments-slider__card-subtitle"><span>a..c</span> tarafından yapılan yorum</h6>
+                                            <div class="comments-slider__card-stars">
+                                                <ul class="rating-stars" data-rating="5">
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                </ul>
+                                            </div>
+                                            <p class="comments-slider__card-text">
+                                                Evony ile yaklaşık 1 yıl önce tanıştım çok memnunum herkese tavsiye ediyorum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-slider__item">
+                                    <div class="comments-slider__card">
+                                        <div class="comments-slider__card-head">
+                                            <img src="/dist/media/img/homepage/comments/slider/02.png" alt="">
+                                        </div>
+                                        <div class="comments-slider__card-body">
+                                            <h6 class="comments-slider__card-subtitle"><span>a..c</span> tarafından yapılan yorum</h6>
+                                            <div class="comments-slider__card-stars">
+                                                <ul class="rating-stars" data-rating="5">
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                </ul>
+                                            </div>
+                                            <p class="comments-slider__card-text">
+                                                Evony ile yaklaşık 1 yıl önce tanıştım çok memnunum herkese tavsiye ediyorum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-slider__item">
+                                    <div class="comments-slider__card">
+                                        <div class="comments-slider__card-head">
+                                            <img src="/dist/media/img/homepage/comments/slider/03.png" alt="">
+                                        </div>
+                                        <div class="comments-slider__card-body">
+                                            <h6 class="comments-slider__card-subtitle"><span>a..c</span> tarafından yapılan yorum</h6>
+                                            <div class="comments-slider__card-stars">
+                                                <ul class="rating-stars" data-rating="5">
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                </ul>
+                                            </div>
+                                            <p class="comments-slider__card-text">
+                                                Evony ile yaklaşık 1 yıl önce tanıştım çok memnunum herkese tavsiye ediyorum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-slider__item">
+                                    <div class="comments-slider__card">
+                                        <div class="comments-slider__card-head">
+                                            <img src="/dist/media/img/homepage/comments/slider/01.png" alt="">
+                                        </div>
+                                        <div class="comments-slider__card-body">
+                                            <h6 class="comments-slider__card-subtitle"><span>a..c</span> tarafından yapılan yorum</h6>
+                                            <div class="comments-slider__card-stars">
+                                                <ul class="rating-stars" data-rating="5">
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                    <li class="rating-stars__item"></li>
+                                                </ul>
+                                            </div>
+                                            <p class="comments-slider__card-text">
+                                                Evony ile yaklaşık 1 yıl önce tanıştım çok memnunum herkese tavsiye ediyorum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-videos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-5 mx-lg-auto text-center">
+                        <h2 class="homepage-videos__title">Kullanıcı Videoları</h2>
+                        <p class="homepage-videos__text">Evony ürünlerini kullananan kullanıcılar ile yaptığımız röportajları <br> sizler için derledik.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div class="homepage-videos__video homepage-videos__video--main">
+                                            <div class="homepage-videos__video-head">
+                                                <img src="/dist/media/img/homepage/videos/01.png" alt="">
+                                                <a href="#" class="homepage-videos__play-btn">
+                                                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="65.8032" cy="65.8032" r="40.9993" fill="white" stroke="white" stroke-width="1.60781" />
+                                                        <path d="M77.2039 65.8032L60.1026 75.6766L60.1026 55.9298L77.2039 65.8032Z" fill="#006740" />
+                                                        <path d="M64 80.5C54.8873 80.5 47.5 73.1127 47.5 64H0.5C0.5 99.0701 28.9299 127.5 64 127.5V80.5ZM80.5 64C80.5 73.1127 73.1127 80.5 64 80.5V127.5C99.0701 127.5 127.5 99.0701 127.5 64H80.5ZM64 47.5C73.1127 47.5 80.5 54.8873 80.5 64H127.5C127.5 28.9299 99.0701 0.5 64 0.5V47.5ZM64 0.5C28.9299 0.5 0.5 28.9299 0.5 64H47.5C47.5 54.8873 54.8873 47.5 64 47.5V0.5Z" fill="white" fill-opacity="0.15" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="homepage-videos__video-body">
+                                                <h4 class="homepage-videos__video-title">Evony Ürünlerini Deneyen Kullanıcı Yorumları - 2. Bölüm</h4>
+                                                <p class="homepage-videos__video-text">Türkiye genelinde evony ürünlerini kullananan kullanıcılar ile röportajlar gerçekleştirerek ürünü değerlendirmeleri ve diğer kullanıcılara bilgi vermelerini amaçlıyoruz.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div class="homepage-videos__video">
+                                            <div class="homepage-videos__video-head">
+                                                <img src="/dist/media/img/homepage/videos/02.png" alt="">
+                                                <a href="#" class="homepage-videos__play-btn">
+                                                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="65.8032" cy="65.8032" r="40.9993" fill="white" stroke="white" stroke-width="1.60781" />
+                                                        <path d="M77.2039 65.8032L60.1026 75.6766L60.1026 55.9298L77.2039 65.8032Z" fill="#006740" />
+                                                        <path d="M64 80.5C54.8873 80.5 47.5 73.1127 47.5 64H0.5C0.5 99.0701 28.9299 127.5 64 127.5V80.5ZM80.5 64C80.5 73.1127 73.1127 80.5 64 80.5V127.5C99.0701 127.5 127.5 99.0701 127.5 64H80.5ZM64 47.5C73.1127 47.5 80.5 54.8873 80.5 64H127.5C127.5 28.9299 99.0701 0.5 64 0.5V47.5ZM64 0.5C28.9299 0.5 0.5 28.9299 0.5 64H47.5C47.5 54.8873 54.8873 47.5 64 47.5V0.5Z" fill="white" fill-opacity="0.15" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="homepage-videos__video-body">
+                                                <h4 class="homepage-videos__video-title">Evony Ürünlerini Deneyen Kullanıcı Yorumları - 3. Bölüm</h4>
+                                                <p class="homepage-videos__video-text">Türkiye genelinde evony ürünlerini kullananan kullanıcılar ile röportajlar gerçekleştirerek ürünü </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div class="homepage-videos__video">
+                                            <div class="homepage-videos__video-head">
+                                                <img src="/dist/media/img/homepage/videos/03.png" alt="">
+                                                <a href="#" class="homepage-videos__play-btn">
+                                                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="65.8032" cy="65.8032" r="40.9993" fill="white" stroke="white" stroke-width="1.60781" />
+                                                        <path d="M77.2039 65.8032L60.1026 75.6766L60.1026 55.9298L77.2039 65.8032Z" fill="#006740" />
+                                                        <path d="M64 80.5C54.8873 80.5 47.5 73.1127 47.5 64H0.5C0.5 99.0701 28.9299 127.5 64 127.5V80.5ZM80.5 64C80.5 73.1127 73.1127 80.5 64 80.5V127.5C99.0701 127.5 127.5 99.0701 127.5 64H80.5ZM64 47.5C73.1127 47.5 80.5 54.8873 80.5 64H127.5C127.5 28.9299 99.0701 0.5 64 0.5V47.5ZM64 0.5C28.9299 0.5 0.5 28.9299 0.5 64H47.5C47.5 54.8873 54.8873 47.5 64 47.5V0.5Z" fill="white" fill-opacity="0.15" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="homepage-videos__video-body">
+                                                <h4 class="homepage-videos__video-title">Evony Ürünlerini Deniyoruz</h4>
+                                                <p class="homepage-videos__video-text">Türkiye genelinde evony ürünlerini kullananan kullanıcılar ile röportajlar gerçekleştirerek ürünü </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div class="homepage-videos__video mb-0">
+                                            <div class="homepage-videos__video-head">
+                                                <img src="/dist/media/img/homepage/videos/04.png" alt="">
+                                                <a href="#" class="homepage-videos__play-btn">
+                                                    <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="65.8032" cy="65.8032" r="40.9993" fill="white" stroke="white" stroke-width="1.60781" />
+                                                        <path d="M77.2039 65.8032L60.1026 75.6766L60.1026 55.9298L77.2039 65.8032Z" fill="#006740" />
+                                                        <path d="M64 80.5C54.8873 80.5 47.5 73.1127 47.5 64H0.5C0.5 99.0701 28.9299 127.5 64 127.5V80.5ZM80.5 64C80.5 73.1127 73.1127 80.5 64 80.5V127.5C99.0701 127.5 127.5 99.0701 127.5 64H80.5ZM64 47.5C73.1127 47.5 80.5 54.8873 80.5 64H127.5C127.5 28.9299 99.0701 0.5 64 0.5V47.5ZM64 0.5C28.9299 0.5 0.5 28.9299 0.5 64H47.5C47.5 54.8873 54.8873 47.5 64 47.5V0.5Z" fill="white" fill-opacity="0.15" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="homepage-videos__video-body">
+                                                <h4 class="homepage-videos__video-title">Evony Ürünlerini Deneyen Kullanıcı Yorumları - 3. Bölüm</h4>
+                                                <p class="homepage-videos__video-text">Türkiye genelinde evony ürünlerini kullananan kullanıcılar ile röportajlar gerçekleştirerek ürünü </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="#" class="btn btn--primary">
+                            Tümünü Gör
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 2.02637L11 8.02637L5 14.0264" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="homepage-blog">
+            <div class="container-md container-fluid p-0 px-lg-5">
+                <div class="row no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-5 mx-lg-auto text-center">
+                        <h2 class="homepage-blog__title">
+                            <img src="/dist/media/img/homepage/blog/evony-text.png" alt="">
+                            <span>
+                                Blog
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="homepage-blog__slider">
+                            <div class="blog-slider js-blog-slider">
+                                <div class="blog-slider__item">
+                                    <div class="blog-card">
+                                        <div class="blog-card-head">
+                                            <img src="/dist/media/img/homepage/blog/slider/01.png" alt="">
+                                            <span class="blog-card-categories">Aktivite</span>
+                                        </div>
+                                        <div class="blog-card-body">
+                                            <h4 class="blog-card-title">
+                                                Zinde Kalmak İçin Yapılması Gerekenler
+                                            </h4>
+                                            <p class="blog-card-text">
+                                                Yaşlanma organlardan deriye kadar vücudun tamamı için kaçınılmaz bir süreçtir. Genç ve zinde kalmak için beslenme, önemli bir faktör olarak karşımıza çıkmaktadır...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-slider__item">
+                                    <div class="blog-card">
+                                        <div class="blog-card-head">
+                                            <img src="/dist/media/img/homepage/blog/slider/02.png" alt="">
+                                            <span class="blog-card-categories">Aktivite</span>
+                                        </div>
+                                        <div class="blog-card-body">
+                                            <h4 class="blog-card-title">
+                                                Doğa Yürüyüşü Yapmanın Faydaları
+                                            </h4>
+                                            <p class="blog-card-text">
+                                                Yaşlanma organlardan deriye kadar vücudun tamamı için kaçınılmaz bir süreçtir. Genç ve zinde kalmak için beslenme, önemli bir faktör olarak karşımıza çıkmaktadır...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-slider__item">
+                                    <div class="blog-card">
+                                        <div class="blog-card-head">
+                                            <img src="/dist/media/img/homepage/blog/slider/03.png" alt="">
+                                            <span class="blog-card-categories">Aktivite</span>
+                                        </div>
+                                        <div class="blog-card-body">
+                                            <h4 class="blog-card-title">
+                                                Zinde Kalmak İçin Yapılması Gerekenler
+                                            </h4>
+                                            <p class="blog-card-text">
+                                                Yaşlanma organlardan deriye kadar vücudun tamamı için kaçınılmaz bir süreçtir. Genç ve zinde kalmak için beslenme, önemli bir faktör olarak karşımıza çıkmaktadır...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-slider__item">
+                                    <div class="blog-card">
+                                        <div class="blog-card-head">
+                                            <img src="/dist/media/img/homepage/blog/slider/03.png" alt="">
+                                            <span class="blog-card-categories">Aktivite</span>
+                                        </div>
+                                        <div class="blog-card-body">
+                                            <h4 class="blog-card-title">
+                                                Zinde Kalmak İçin Yapılması Gerekenler
+                                            </h4>
+                                            <p class="blog-card-text">
+                                                Yaşlanma organlardan deriye kadar vücudun tamamı için kaçınılmaz bir süreçtir. Genç ve zinde kalmak için beslenme, önemli bir faktör olarak karşımıza çıkmaktadır...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="#" class="btn btn--tertiary-outline">
+                            Tümünü Gör
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 2.02637L11 8.02637L5 14.0264" stroke="#253146" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container-xlg container-fluid p-0">
+                <div class="row no-gutters justify-content-lg-between">
+                    <div class="col-sm-6 col-md-6 col-lg-3 d-none d-lg-block">
+                        <img class="footer__main-logo" src="/dist/media/img/layout/footer/evony-logo.png" alt="">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-2">
+                        <div class="footer__menu">
+                            <h4 class="footer__menu-title">Sayfalar</h4>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Hakkımızda</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Ürünler</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Sıkça Sorulan Sorular</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Online Satış</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-2">
+                        <div class="footer__menu">
+                            <h4 class="footer__menu-title">Bize Ulaşın</h4>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">İletişim</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a href="#" class="footer__menu-link">Hayat Kimya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                        <div class="footer__menu footer__menu--social">
+                            <h4 class="footer__menu-title">Sosyal Medya</h4>
+                            <p class="footer__menu-text">Sosyal medya hesaplarımızı takip ederek yeniliklerden ve kampanyalarımızdan haberdar olabilirsiniz.</p>
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8819 17.367C25.0766 17.3129 25.4583 17.2998 28.5 17.2998C31.5418 17.2998 31.9235 17.3129 33.1182 17.367C34.9382 17.4501 36.537 17.8962 37.8203 19.1795C39.1036 20.4629 39.5498 22.0617 39.6328 23.8817C39.687 25.0763 39.7 25.4581 39.7 28.4998C39.7 31.5415 39.687 31.9233 39.6328 33.1179C39.5498 34.9379 39.1036 36.5367 37.8203 37.8201C36.537 39.1034 34.9382 39.5495 33.1182 39.6326C31.9235 39.6867 31.5418 39.6998 28.5 39.6998C25.4583 39.6998 25.0766 39.6867 23.8819 39.6326C22.0619 39.5495 20.4631 39.1034 19.1798 37.8201C17.8964 36.5367 17.4503 34.9379 17.3672 33.1179C17.3131 31.9233 17.3 31.5415 17.3 28.4998C17.3 25.4581 17.3131 25.0763 17.3672 23.8817C17.4503 22.0617 17.8964 20.4629 19.1798 19.1795C20.4631 17.8962 22.0619 17.4501 23.8819 17.367ZM33.0259 19.3831C31.8452 19.329 31.4906 19.3178 28.5001 19.3178C25.5097 19.3178 25.1551 19.329 23.9744 19.3831C22.6995 19.441 21.5169 19.6967 20.6069 20.6067C19.6969 21.5167 19.4412 22.6992 19.3833 23.9742C19.3292 25.1548 19.318 25.5095 19.318 28.4999C19.318 31.4903 19.3292 31.845 19.3833 33.0256C19.4412 34.3006 19.6969 35.4831 20.6069 36.3931C21.5169 37.3031 22.6995 37.5588 23.9744 37.6167C25.1551 37.6708 25.5097 37.682 28.5001 37.682C31.4906 37.682 31.8452 37.6708 33.0259 37.6167C34.3008 37.5588 35.4834 37.3031 36.3934 36.3931C37.3034 35.4831 37.5591 34.3006 37.617 33.0256C37.6711 31.845 37.6823 31.4903 37.6823 28.4999C37.6823 25.5095 37.6711 25.1548 37.617 23.9742C37.5591 22.6992 37.3034 21.5167 36.3934 20.6067C35.4834 19.6967 34.3008 19.441 33.0259 19.3831Z" fill="#00783F" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4695 28.5C22.4695 25.1695 25.1697 22.4692 28.5002 22.4692C31.8308 22.4692 34.531 25.1695 34.531 28.5C34.531 31.8305 31.8308 34.5308 28.5002 34.5308C25.1697 34.5308 22.4695 31.8305 22.4695 28.5ZM24.5855 28.5006C24.5855 30.6626 26.3383 32.4154 28.5003 32.4154C30.6622 32.4154 32.4151 30.6626 32.4151 28.5006C32.4151 26.3387 30.6622 24.5858 28.5003 24.5858C26.3383 24.5858 24.5855 26.3387 24.5855 28.5006Z" fill="#00783F" />
+                                        <path d="M34.5312 24.1927C35.4828 24.1927 36.2543 23.4213 36.2543 22.4697C36.2543 21.518 35.4828 20.7466 34.5312 20.7466C33.5796 20.7466 32.8081 21.518 32.8081 22.4697C32.8081 23.4213 33.5796 24.1927 34.5312 24.1927Z" fill="#00783F" />
+                                        <rect x="1" y="1" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                    </svg>
+                                    <div class="footer__menu-link-wrapper">
+                                        <a href="#" class="footer__menu-link">evonyhijyenailesi</a>
+                                        <a href="#" class="footer__menu-link">evonyyetiskinbakim</a>
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.4536 17.5465C41.0669 17.9198 42.1869 19.5998 42.5602 22.0265C42.9336 24.4531 42.9336 27.9998 42.9336 27.9998C42.9336 27.9998 42.9336 31.5465 42.5602 33.9731C42.1869 36.3998 41.0669 37.8931 38.4536 38.4531C34.3469 39.1998 28.0002 39.1998 28.0002 39.1998C28.0002 39.1998 21.6536 39.1998 17.5469 38.4531C14.9336 38.0798 13.8136 36.3998 13.4402 33.9731C13.0669 31.5465 13.0669 27.9998 13.0669 27.9998C13.0669 27.9998 13.0669 24.4531 13.4402 22.0265C13.6269 19.5998 14.9336 17.9198 17.5469 17.5465C21.6536 16.7998 28.0002 16.7998 28.0002 16.7998C28.0002 16.7998 34.3469 16.7998 38.4536 17.5465ZM33.6001 27.9998L24.2668 22.3998V33.5998L33.6001 27.9998Z" fill="#00783F" />
+                                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                    </svg>
+                                    <a href="#" class="footer__menu-link">evony</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1313_2002)">
+                                            <rect x="0.5" y="1" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                            <path d="M25.322 39.6998L25.2903 29.518H21.2803V25.4453H25.2903V22.8998C25.2903 19.1209 27.5944 17.2998 30.9136 17.2998C32.5035 17.2998 33.87 17.42 34.2682 17.4738V21.4229L31.9662 21.424C30.161 21.424 29.8115 22.2951 29.8115 23.5735V25.4453H35.0649L33.0599 29.518H29.8115V39.6998H25.322Z" fill="#00783F" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1313_2002">
+                                                <rect width="56" height="56" fill="white" transform="translate(0 0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <div class="footer__menu-link-wrapper">
+                                        <a href="#" class="footer__menu-link">evonyhijyenailesi</a>
+                                        <a href="#" class="footer__menu-link">evonyyetiskinbakim</a>
+                                    </div>
+                                </li>
+
+                                <li class="footer__menu-item">
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1313_2020)">
+                                            <path d="M38.22 16.7998H17.78C17.22 16.7998 16.8 17.2198 16.8 17.7798V38.3598C16.8 38.7798 17.22 39.1998 17.78 39.1998H38.36C38.92 39.1998 39.34 38.7798 39.34 38.2198V17.7798C39.2 17.2198 38.78 16.7998 38.22 16.7998ZM23.38 35.8398H20.16V25.1998H23.52V35.8398H23.38ZM21.84 23.7998C20.72 23.7998 19.88 22.8198 19.88 21.8398C19.88 20.7198 20.72 19.8798 21.84 19.8798C22.96 19.8798 23.8 20.7198 23.8 21.8398C23.66 22.8198 22.82 23.7998 21.84 23.7998ZM35.84 35.8398H32.48V30.6598C32.48 29.3998 32.48 27.8598 30.8 27.8598C29.12 27.8598 28.84 29.2598 28.84 30.6598V35.9798H25.48V25.1998H28.7V26.5998C29.12 25.7598 30.24 24.9198 31.78 24.9198C35.14 24.9198 35.7 27.1598 35.7 29.9598V35.8398H35.84Z" fill="#00783F" />
+                                        </g>
+                                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#00783F" stroke-opacity="0.08" />
+                                        <defs>
+                                            <clipPath id="clip0_1313_2020">
+                                                <rect width="22.4" height="22.4" fill="white" transform="translate(16.8 16.7998)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <a href="#" class="footer__menu-link">hayatkimya</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright ">
+            <div class="container-xl container-fluid footer__copyright-bg-line">
+                <div class="row align-items-lg-center justify-content-lg-between no-gutters">
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-1 order-lg-1">
+                        <p class="footer__copyright-text">Evony 2020. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-3 order-lg-2">
+                        <a class="footer__copyright-logo" href="#">
+                            <img src="/dist/media/img/layout/footer/hayat-kimya-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4 order-2 order-lg-3">
+                        <ul class="footer__copyright-menu">
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Kullanım Şartları</a>
+                            </li>
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Gizlilik Politikası</a>
+                            </li>
+                            <li class="footer__copyright-menu-item">
+                                <a href="#" class="footer__copyright-menu-link">Çerezler</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/dist/js/app.js"></script>
+    <script src="/dist/js/plugins/lazysizes/lazysizes.min.js"></script>
+    <!-- <script src="/dist/js/plugins/jquery.modal.min.js"></script> -->
+    <script src="/dist/js/plugins/js.cookie.min.js"></script>
+    <script src="/dist/js/plugins/vanilla-sharing.js"></script>
+    <script src="/dist/js/plugins/popup.js"></script>
+
+
+
+
+
+</body>
+
+</html>

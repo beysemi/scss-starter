@@ -1,0 +1,21 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Gulp Development",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/tools/node_modules/gulp/bin/gulp.js",
+            "stopOnEntry": false,
+            "args": [
+                "watch-html"
+            ],
+            "cwd": "${workspaceRoot}/src/tools",
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "console": "integratedTerminal",
+        }
+    ]
+}

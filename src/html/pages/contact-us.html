@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @@include('../components/shared/head.html')
+</head>
+
+<body>
+
+    @@include('../components/shared/header.html',{
+        'modifierClass': 'desktop-header--bg-linear',
+    })
+
+    <main>
+        @@include('../components/partials/contact-us/hero.html')
+        @@include('../components/partials/contact-us/information.html')
+        @@include('../components/partials/contact-us/form.html')
+        
+    </main>
+
+
+    @@include('../components/shared/footer.html')
+    
+    @@include('../components/shared/scripts.html')
+    <script src="/dist/js/pages/contact-us.js"></script>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    @@include('../components/shared/head.html')
+</head>
+
+<body>
+
+    @@include('../components/shared/header.html',{
+        'modifierClass': 'desktop-header--bg-linear',
+    })
+
+    <main>
+        @@include('../components/partials/product-detail/main.html')
+        @@include('../components/partials/product-detail/features.html')
+        @@include('../components/partials/product-detail/similar-products.html')
+        
+        
+    </main>
+
+    
+    @@include('../components/shared/footer.html')
+    
+    @@include('../components/shared/scripts.html')
+    <script src="/dist/js/pages/product-detail.js"></script>
+    
+
+</body>
+
+</html>
