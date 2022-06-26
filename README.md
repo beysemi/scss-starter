@@ -3,7 +3,9 @@
 First, run the development server:
 
 ```cd src/tools ```
-and 
+
+and
+
 ```bash
 npm run dev
 # or
